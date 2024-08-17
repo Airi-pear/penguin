@@ -73,7 +73,7 @@ h2::after {
   bottom: -5px;
 }
 section{
-	margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 
@@ -93,10 +93,11 @@ section{
 	margin: 0 auto;
 }
 .table-back {
-	background-color: rgba(255,255,255,1.00);
-	border-radius: 60px;
-	padding: 30px;
-	text-align: center;
+    background-color: rgba(255,255,255,1.00);
+    border-radius: 60px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .about table{
@@ -281,10 +282,10 @@ dt.open {
     display: none;
 }
 .recommend  {
-	margin-bottom: 20px;
-	background-color: rgba(255,255,255,0.50);
-	border-radius: 30px;
-	padding: 0 15px 15px;
+    margin-bottom: 50px;
+    background-color: rgba(255,255,255,0.50);
+    border-radius: 30px;
+    padding: 0 15px 15px;
 }
 
 /*-------------------------------------------*/
@@ -451,6 +452,9 @@ nav li{
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 0.3s;
+}
+section:last-child {
+    margin-bottom: 40px;
 }
 
 
