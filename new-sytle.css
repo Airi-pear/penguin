@@ -438,7 +438,7 @@ section:last-child {
     margin-top: 70px;
     align-items: flex-start;
 }
-.flex-area:nth-of-type(even){
+.rowarea{
     flex-direction: row-reverse;
 }
 
@@ -687,6 +687,11 @@ h2 {
         flex-direction: column;
         padding-bottom:0;
     }
+	
+
+tr td span {
+    margin-right: 0px;
+}
 }
 
 @keyframes bubble {
