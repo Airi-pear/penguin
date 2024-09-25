@@ -438,7 +438,8 @@ section:last-child {
     margin-top: 70px;
     align-items: flex-start;
 }
-.rowarea{
+.topic2
+{
     flex-direction: row-reverse;
 }
 
