@@ -569,7 +569,6 @@ nav li{
 	padding: 0 20px;
 }
 .nav-button.active{
-  transform: rotateX(360deg);
 	margin-top:10px;
 }
 
@@ -577,7 +576,7 @@ nav li{
     top: 18px;
     left: 25px;
     transform: translateY(6px) rotate(-135deg);
-    width: 50px;
+    width: 40px;
 }
 
 .nav-button.active span:nth-of-type(2) {
@@ -588,7 +587,7 @@ nav li{
     top: 30px;
     left: 25px;
     transform: translateY(-6px) rotate(135deg);
-    width: 50px;
+    width: 40px;
 }
  .swim-img {
     width: 100%;
@@ -621,14 +620,14 @@ section {
     margin-bottom: 10vh;
 }
         .nav-button {
-	width: 70px;
+	width: 60px;
 	height: 50px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	right: 20px;
+	right: 7px;
 }
 .nav-button span{
-	width:50px;
+	width:40px;
 	height: 5px;
 	left:8px;
 	top:15px;
