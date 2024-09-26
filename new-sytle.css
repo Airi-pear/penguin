@@ -712,6 +712,9 @@ tr td span {
     .youtubebox {
  width: 90%;
 }
+    .footer-info ul li a{
+        line-height: 50px;
+    }
 }
 
 @keyframes bubble {
