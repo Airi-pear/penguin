@@ -39,7 +39,7 @@
         <div class="flex-area">
             <h2 class="tategaki">ペンギンってどんな生き物？</h2>
             <div class="box">
-                <p>ペンギンは「鳥綱ペンギン目」に属し、海鳥に分類されますが、ペンギンは空を飛ぶことができません。
+                <p>ペンギンは「鳥綱ペンギン目」に属し、海鳥に分類されますが、ペンギンは空を飛ぶことができません。<br>
                     ですが、非常に優れた泳ぎ手です。歩く姿はよちよちとかわいらしい印象にも関わらず、水中では最大で時速30km以上で泳ぐことができます。</p>
                 <figure class="swim-img"><img src="img/penguin-2.png" class="anime1" width="913" height="276" alt=""/></figure>
                 <div class="more-button"><a href="https://ja.wikipedia.org/wiki/ペンギン" target="_blank">ペンギンの生態<span>をもっと知る</span></a></div>
@@ -58,28 +58,28 @@
         <table width="700">
             <tbody>
                 <tr>
-                    <th scope="row">コウテイペンギン属</th>
-                    <td><span class="japan">コウテイペンギン</span><span class="japan">オウサマペンギン</span></td>
+                    <th scope="row" class="title">コウテイペンギン属</th>
+                    <td class="toggle"><span class="japan">コウテイペンギン</span><span class="japan">オウサマペンギン</span></td>
                 </tr>
                 <tr>
-                    <th scope="row">アデリーペンギン属</th>
-                    <td><span class="japan">アデリーペンギン</span><span class="japan">ジェンツーペンギン</span><span class="japan">ヒゲペンギン</span></td>
+                    <th scope="row" class="title">アデリーペンギン属</th>
+                    <td class="toggle"><span class="japan">アデリーペンギン</span><span class="japan">ジェンツーペンギン</span><span class="japan">ヒゲペンギン</span></td>
                 </tr>
                 <tr>
-                    <th scope="row">マカロニペンギン属</th>
-                    <td><span class="japan">マカロニペンギン</span><span class="japan">イワトビペンギン</span><span>フィヨルドランドペンギン</span><span>スネアーズペンギン</span><span>シュレーターペンギン</span><span>ロイヤルペンギン</span></td>
+                    <th scope="row" class="title">マカロニペンギン属</th>
+                    <td class="toggle"><span class="japan">マカロニペンギン</span><span class="japan">イワトビペンギン</span><span>フィヨルドランドペンギン</span><span>スネアーズペンギン</span><span>シュレーターペンギン</span><span>ロイヤルペンギン</span></td>
                 </tr>
                 <tr>
-                    <th scope="row">キンメペンギン属</th>
-                    <td><span>キンメペンギン</span></td>
+                    <th scope="row" class="title">キンメペンギン属</th>
+                    <td class="toggle"><span>キンメペンギン</span></td>
                 </tr>
                 <tr>
-                    <th scope="row">コガタペンギン属</th>
-                    <td><span class="japan">コガタペンギン</span><span>ハネジロペンギン</span></td>
+                    <th scope="row" class="title">コガタペンギン属</th>
+                    <td class="toggle"><span class="japan">コガタペンギン</span><span>ハネジロペンギン</span></td>
                 </tr>
                 <tr>
-                    <th scope="row">フンボルトペンギン属</th>
-                    <td><span class="japan">フンボルトペンギン</span><span class="japan">ケープペンギン</span><span class="japan">マゼランペンギン</span><span>ガラパゴスペンギンコガタペンギン</span><span>ハネジロペンギン</span></td>
+                    <th scope="row" class="title">フンボルトペンギン属</th>
+                    <td class="toggle"><span class="japan">フンボルトペンギン</span><span class="japan">ケープペンギン</span><span class="japan">マゼランペンギン</span><span>ガラパゴスペンギンコガタペンギン</span><span>ハネジロペンギン</span></td>
                 </tr>
             </tbody>
         </table>
@@ -222,7 +222,20 @@ $(function() {
     $(this).toggleClass("open");
 	});
 });
-		
+$(document).ready(function(){
+    var ua = navigator.userAgent;
+    
+    if(/iPhone|iPad|iPod|Android/i.test(ua)){
+     $(function() {
+  $(".toggle").hide();
+	$(".title").on("click", function() {
+		$(this).next().slideToggle();
+	});
+});
+    }
+});
+
+
 		//ハンバーガーアニメ
 		$(".nav-button").click(function () {
     $(this).toggleClass('active');

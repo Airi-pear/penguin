@@ -17,10 +17,7 @@ img {
 #aqua .flex-box figure {
     width: 400px;
 }
-.nav-button.scroll {
-    border: 2px solid #5d5d5d;
-    border-top:none;
-}
+
 html{scroll-behavior: smooth;
 box-sizing: border-box;
 scroll-padding-top:30px;
@@ -272,7 +269,10 @@ dt.open {
 .nav-button span:nth-child(3){
 	top:86px
 }
-
+.nav-button.scroll {
+    border: 2px solid #5d5d5d;
+    border-top:none;
+}
 /*-------------------------------------------*/
 
 
@@ -348,6 +348,9 @@ dt.open {
 }
 
 /*-------------------------------------------*/
+.title{
+	pointer-events: none;
+}
 
 
 tr td span {
@@ -668,6 +671,13 @@ h2 {
 .about p {
     width:100%;
 }
+    .title{
+		pointer-events: all;
+	}
+	
+	.toggle{
+		display: none;
+	}
 .more-button  ,.sp-more-button{
     margin: 50px auto;
 }
@@ -681,6 +691,7 @@ h2 {
     #about .more-button{
         display: none;
     }
+    
     .flex-area{
         margin-top:30px;
     }
@@ -688,10 +699,18 @@ h2 {
         flex-direction: column;
         padding-bottom:0;
     }
-	
-
+   #live .flex-area {
+        flex-direction: column;
+        align-items: center;
+    }
+#live .tategaki {
+    writing-mode:horizontal-tb;
+}
 tr td span {
     margin-right: 0px;
+}
+    .youtubebox {
+ width: 90%;
 }
 }
 
